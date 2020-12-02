@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>formulario 36</title>
+</head>
+<body>
+        <p>Escriba los siguientes datos</p><br>
+    <form action="ej36.php" method="GET">
+    <label for="nombre"> nombre: </label>
+    <input type="text" name="nombre">
+    <label for="apellidos"> apellidos: </label>
+    <input type="text" name="apellidos">
+    <select name="edad">
+        <option>Menor 20 años</option>
+        <option>Entre 20 y 39</option>
+        <option>Entre 40 y 59</option>
+        <option>60 o más</option>
+    </select><br>
+    <label for="peso"> peso: </label>
+    <input type="text" name="peso"> &nbsp; &nbsp; &nbsp;
+    <b>Sexo
+    <input type="radio" name="sexo">Hombre
+    <input type="radio" name="sexo">mujer
+    </b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <b>Estado civil
+        <input type="radio" name="Estado">Soltero
+        <input type="radio" name="Estado">Casado
+        <input type="radio" name="Estado">Otro
+    </b>
+    <p>Aficiones
+        <input type="checkbox" name="Aficiones">Cine
+        <input type="checkbox" name="Aficiones">Literatura
+        <input type="checkbox" name="Aficiones">Tebeos<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="checkbox" name="Aficiones">Deporte
+        <input type="checkbox" name="Aficiones">Musica
+        <input type="checkbox" name="Aficiones">Televisión
+    </p>
+    <input type="submit" value="enviar"/>
+    <input type="Reset" value="Borrar"/>
+    </form>
+</body>
+</html>
