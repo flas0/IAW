@@ -4,6 +4,10 @@ $apellidos=$_GET["apellidos"];
 $edad=$_GET["edad"];
 $salario=$_GET["salario"];
 
+
+print "Tu nombre es $nombre </br>";
+print "Tu apellido es $apellidos</br>";
+
 if ($salario>2000) {
 print "Tu salario es ". $salario;
 }
@@ -29,9 +33,6 @@ else {
 $salario=$salario*1.15;
 print "Tu salario ahora es ". $salario; 
 }
-
-else {
-print "Error inútil";
 }
 
 ?>
