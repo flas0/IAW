@@ -1,45 +1,37 @@
 <?php
-if (isset($_GET["nombre"]) && isset($_GET["apellidos"]) && isset($_GET["edad"]) && isset($_GET["salario"]))     {
-    if ($_GET["nombre"]==""  $_GET["apellidos"]==""  $_GET["edad"]=="" || $_GET["salario"]=="") {
-        echo "error";
-    }
-    else{
+$nombre=$_GET["nombre"];
+$apellidos=$_GET["apellidos"];
+$edad=$_GET["edad"];
+$salario=$_GET["salario"];
 
-        $nombre=$_GET["nombre"];
-        $apellidos=$_GET["apellidos"];
-        $edad=$_GET["edad"];
-        $salario=$_GET["salario"];
-
-        if ($salario>2000) {
-            echo ("$salario");
-        }
-        elseif ($salario>=1000) {
-            if($edad>45){
-                $salario=$salario1.03;
-                echo $salario;
-            }
-            else{
-                $salario=$salario1.1;
-                echo $salario;
-            }
-        }
-
-        elseif($salario<1000) {
-
-            if ($edad<30)
-                echo ("$salario=1100");
-
-            else {
-                $salario=$salario*1.15;
-
-                echo $salario;
-            }
-        }
-    }
-
+if ($salario>2000) {
+print "Tu salario es ". $salario;
+}
+elseif ($salario>=1000 && $salario<=2000) {
+if ($edad>45) {
+$salario=$salario*1.03;
+print "Tu salario con más de 45 años es ". $salario;
+}
+else {
+$salario=$salario*1.1;
+print "Tu salario con menos de 45 años es ". $salario;
+}
+}
+elseif ($salario<1000) {
+if ($edad<30) {
+print "Tu salario con menos de 30 años es 1100";
+}
+elseif ($edad>=30 && $edad<=45) {
+$salario=$salario*1.03;
+print "Tu salario ahora es ". $salario;
+}
+else {
+$salario=$salario*1.15;
+print "Tu salario ahora es ". $salario; }
 }
 
-else{
-    echo ("Hay un error");
+else {
+print "Error inútil";
 }
+
 ?>
