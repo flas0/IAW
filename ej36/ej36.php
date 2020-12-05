@@ -1,19 +1,17 @@
 <?php
 
-$nombre = $_GET["nombre"];
+print "su nombre es $_GET[nombre].</br>"; 
 
-$apellidos = $_GET["Apellidos"];
+print "su apellido es $_GET[apellidos].</br>"; 
 
-$edad = $_GET["Edad"];
+print "Tiene $_GET[edad].</br>"; 
 
-$peso = $_GET["Peso"];
+print "su peso es $_GET[peso].</br>"; 
 
-$sexo = $_GET["Sexo"];
+print "Es un  $_GET[sexo].</br>";
+print "Su estado civil es $_GET[estado].</br>"; 
 
-$estado = $_GET["Estado"];
-
-$aficiones = $_GET["Aficiones"];
-
-print_r($_GET);
+print "Sus aficiones son $_GET[Aficiones].</br>" ;
+print "Volver al formulario buscate la vida como"
 
 ?>                      

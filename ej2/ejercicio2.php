@@ -27,7 +27,7 @@ print "Tu salario ahora es ". $salario;
 }
 else {
 $salario=$salario*1.15;
-print "Tu salario ahora es ". $salario; }
+print "Tu salario ahora es ". $salario; 
 }
 
 else {
