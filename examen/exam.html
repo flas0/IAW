@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+
+<form action="exam.php"method="GET">
+    <h2> Cálculo valor vivienda </h2>
+    <hr>
+    <p><label>Tipo de vivienda:</label>
+        <select name="tipo"><option value="Piso">Piso
+            <option value="Adosado">Adosado
+                <option value="Chalet">Chalet
+                    <option value="Ático">Ático
+
+                    </select></P>
+                    <p><label>Zona:</label><select name="zona">
+                        <option value="Centro">Centro</option>
+                        <option value="Este">Este</option>
+                        <option value="Sur">Sur</option>
+                        <option value="Norte">Norte</option>
+                        <option value="Suburbios">Suburbios</option>
+                    </select></p>
+                    <p><label>Dirección:</label>
+                        <input type="text"name="direccion"></P>
+                        <p><label>Número de dormitorios:</label>
+                            <input type="radio"name="ndormitorios"value="1">1
+                            <input type="radio"name="ndormitorios"value="2">2
+                            <input type="radio"name="ndormitorios"value="3"CHECKED>3
+                            <input type="radio"name="ndormitorios"value="4">4
+                            <input type="radio"name="ndormitorios"value="5">5</P>
+                            <p><label>Precio:</label>
+                                <input type="text"name="precio">&euro;</P>
+                                <p><label>Tamaño:</label>
+                                    <input type="text"name="tamano"> metros cuadrados</P>
+                                    <p><label>Extras (marque los que procedan):</label>
+                                        <input type="checkbox"name="piscina">Piscina
+                                        <input type="checkbox"name="jardin">Jardín
+                                        <input type="checkbox"name="garage">Garage</P>
+                                    <p><label>Observaciones:</label>
+                                        <textarea name="observaciones"cols="30"rows="3"></textarea></P>
+                                    <p><input type="submit"name="insertar"value="Calcular precio vivienda"></P>
+                                </form>
+                            </body>
+                        </html>

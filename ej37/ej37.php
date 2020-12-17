@@ -25,7 +25,7 @@ print "La zona seleccionada es $_GET[tipoz].</br>";
 
 print "La dirección introducida es $_GET[direccion].</br>"; 
 
-if (is_null($direccion)==TRUE {
+if (is_null($direccion)==TRUE){
     print "";
 }
 

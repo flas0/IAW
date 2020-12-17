@@ -2,11 +2,11 @@
 
 $n = $_GET["numero"];
 
-if (is_numeric($n)){
-    if (($n - intval($n))= 0){
+if (is_numeric($n)==TRUE){
+    elseif (($n - intval($n))= 0){
     print "Es un numero entero";
 }
-    else { print "Es un numero decimal";
+    elseif { print "Es un numero decimal";
 }
 else {
     print "ERROR INUTIL";
